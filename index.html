@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport"content="width=device-width, initial-scale=1">
+
+
+<link href="css/bootstrap.min.css"rel="stylesheet">
+<script src="processing-1.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+p {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+</style>
+
+<body>
+<p>
+  <script type="application/javascript" data-processing-target="pjs">
+/*
+  @pjs preload="Images/Vowel/vowel_000.gif
+  ,Images/Vowel/vowel_001.gif
+  ,Images/Vowel/vowel_002.gif 
+  ,Images/Vowel/vowel_003.gif 
+  ,Images/Vowel/vowel_004.gif 
+  ,Images/Vowel/vowel_005.gif 
+  ,Images/Vowel/vowel_006.gif 
+  ,Images/Vowel/vowel_007.gif 
+  ,Images/Vowel/vowel_008.gif
+  ,Images/Vowel/vowel_009.gif
+  ,Images/Consonant/consonant_000.gif
+  ,Images/Consonant/consonant_001.gif
+  ,Images/Consonant/consonant_002.gif 
+  ,Images/Consonant/consonant_003.gif 
+  ,Images/Consonant/consonant_004.gif 
+  ,Images/Consonant/consonant_005.gif 
+  ,Images/Consonant/consonant_006.gif 
+  ,Images/Consonant/consonant_007.gif 
+  ,Images/Consonant/consonant_008.gif
+  ,Images/Consonant/consonant_009.gif
+  ,Images/Consonant/consonant_010.gif 
+  ,Images/Consonant/consonant_011.gif
+  ,Images/Consonant/consonant_012.gif
+  ,Images/Consonant/consonant_013.gif
+  ,Images/Character/character_0_0.gif
+  ,Images/Character/character_0_1.gif
+  ,Images/Character/character_0_2.gif
+  ,Images/Character/character_0_3.gif
+  ,Images/Character/character_0_4.gif
+  ,Images/Character/character_0_5.gif
+  ,Images/Character/character_0_6.gif
+  ,Images/Character/character_0_7.gif
+  ,Images/Character/character_0_8.gif
+  ,Images/Character/character_0_9.gif
+  ,Images/Character/character_0_10.gif
+  ,Images/Character/character_0_11.gif
+  ,Images/Character/character_0_12.gif
+  ,Images/Character/character_0_13.gif
+  ,Images/Character/character_1_0.gif
+  ,Images/Character/character_1_1.gif
+  ,Images/Character/character_1_2.gif
+  ,Images/Character/character_1_3.gif
+  ,Images/Character/character_1_4.gif
+  ,Images/Character/character_1_5.gif
+  ,Images/Character/character_1_6.gif
+  ,Images/Character/character_1_7.gif
+  ,Images/Character/character_1_8.gif
+  ,Images/Character/character_1_9.gif
+  ,Images/Character/character_1_10.gif
+  ,Images/Character/character_1_11.gif
+  ,Images/Character/character_1_12.gif
+  ,Images/Character/character_1_13.gif
+  ,Images/Character/character_2_0.gif
+  ,Images/Character/character_2_1.gif
+  ,Images/Character/character_2_2.gif
+  ,Images/Character/character_2_3.gif
+  ,Images/Character/character_2_4.gif
+  ,Images/Character/character_2_5.gif
+  ,Images/Character/character_2_6.gif
+  ,Images/Character/character_2_7.gif
+  ,Images/Character/character_2_8.gif
+  ,Images/Character/character_2_9.gif
+  ,Images/Character/character_2_10.gif
+  ,Images/Character/character_2_11.gif
+  ,Images/Character/character_2_12.gif
+  ,Images/Character/character_2_13.gif
+  ,Images/Character/character_3_0.gif
+  ,Images/Character/character_3_1.gif
+  ,Images/Character/character_3_2.gif
+  ,Images/Character/character_3_3.gif
+  ,Images/Character/character_3_4.gif
+  ,Images/Character/character_3_5.gif
+  ,Images/Character/character_3_6.gif
+  ,Images/Character/character_3_7.gif
+  ,Images/Character/character_3_8.gif
+  ,Images/Character/character_3_9.gif
+  ,Images/Character/character_3_10.gif
+  ,Images/Character/character_3_11.gif
+  ,Images/Character/character_3_12.gif
+  ,Images/Character/character_3_13.gif
+  ,Images/Character/character_4_0.gif
+  ,Images/Character/character_4_1.gif
+  ,Images/Character/character_4_2.gif
+  ,Images/Character/character_4_3.gif
+  ,Images/Character/character_4_4.gif
+  ,Images/Character/character_4_5.gif
+  ,Images/Character/character_4_6.gif
+  ,Images/Character/character_4_7.gif
+  ,Images/Character/character_4_8.gif
+  ,Images/Character/character_4_9.gif
+  ,Images/Character/character_4_10.gif
+  ,Images/Character/character_4_11.gif
+  ,Images/Character/character_4_12.gif
+  ,Images/Character/character_4_13.gif
+  ,Images/Character/character_5_0.gif
+  ,Images/Character/character_5_1.gif
+  ,Images/Character/character_5_2.gif
+  ,Images/Character/character_5_3.gif
+  ,Images/Character/character_5_4.gif
+  ,Images/Character/character_5_5.gif
+  ,Images/Character/character_5_6.gif
+  ,Images/Character/character_5_7.gif
+  ,Images/Character/character_5_8.gif
+  ,Images/Character/character_5_9.gif
+  ,Images/Character/character_5_10.gif
+  ,Images/Character/character_5_11.gif
+  ,Images/Character/character_5_12.gif
+  ,Images/Character/character_5_13.gif
+  ,Images/Character/character_6_0.gif
+  ,Images/Character/character_6_1.gif
+  ,Images/Character/character_6_2.gif
+  ,Images/Character/character_6_3.gif
+  ,Images/Character/character_6_4.gif
+  ,Images/Character/character_6_5.gif
+  ,Images/Character/character_6_6.gif
+  ,Images/Character/character_6_7.gif
+  ,Images/Character/character_6_8.gif
+  ,Images/Character/character_6_9.gif
+  ,Images/Character/character_6_10.gif
+  ,Images/Character/character_6_11.gif
+  ,Images/Character/character_6_12.gif
+  ,Images/Character/character_6_13.gif
+  ,Images/Character/character_7_0.gif
+  ,Images/Character/character_7_1.gif
+  ,Images/Character/character_7_2.gif
+  ,Images/Character/character_7_3.gif
+  ,Images/Character/character_7_4.gif
+  ,Images/Character/character_7_5.gif
+  ,Images/Character/character_7_6.gif
+  ,Images/Character/character_7_7.gif
+  ,Images/Character/character_7_8.gif
+  ,Images/Character/character_7_9.gif
+  ,Images/Character/character_7_10.gif
+  ,Images/Character/character_7_11.gif
+  ,Images/Character/character_7_12.gif
+  ,Images/Character/character_7_13.gif
+  ,Images/Character/character_8_1.gif
+  ,Images/Character/character_8_2.gif
+  ,Images/Character/character_8_3.gif
+  ,Images/Character/character_8_4.gif
+  ,Images/Character/character_8_5.gif
+  ,Images/Character/character_8_6.gif
+  ,Images/Character/character_8_7.gif
+  ,Images/Character/character_8_8.gif
+  ,Images/Character/character_8_9.gif
+  ,Images/Character/character_8_10.gif
+  ,Images/Character/character_8_11.gif
+  ,Images/Character/character_8_12.gif
+  ,Images/Character/character_8_13.gif
+  ,Images/Character/character_9_1.gif
+  ,Images/Character/character_9_2.gif
+  ,Images/Character/character_9_3.gif
+  ,Images/Character/character_9_4.gif
+  ,Images/Character/character_9_5.gif
+  ,Images/Character/character_9_6.gif
+  ,Images/Character/character_9_7.gif
+  ,Images/Character/character_9_8.gif
+  ,Images/Character/character_9_9.gif
+  ,Images/Character/character_9_10.gif
+  ,Images/Character/character_9_11.gif
+  ,Images/Character/character_9_12.gif
+  ,Images/Character/character_9_13.gif
+  ,Images/background.jpg
+  ";
+*/
+  Audio audio = new Audio();
+  String fileExt;
+  int BoxSize = 60;
+  boolean dragged = false;
+  boolean locked = false;
+  float [] X_Vowel;
+  float [] Y_Vowel;
+  float [] X_Consonant;
+  float [] Y_Consonant;
+  int Num_Vowel=10;
+  int Num_Consonant=14;
+  int keynumber=0;
+  int VowelMatching=100;
+  int ConsonantMatching=200;
+  int i, j, k;
+  PImage [] Im_Vowel;
+  PImage [] Im_Consonant;
+  PImage [][] Im_Character;
+  PImage BackGround;
+  int [][] Array_Vowel;
+  int [][] Array_Consonant;
+  int TempX, TempY;
+  String route;
+  String Num, Num2;
+
+  void setup() {
+    size(670, 910);
+    X_Vowel = new float[Num_Vowel];
+    Y_Vowel = new float[Num_Vowel];
+    X_Consonant = new float[Num_Consonant];
+    Y_Consonant = new float[Num_Consonant];
+    Im_Consonant= new PImage[Num_Consonant];
+    Im_Vowel= new PImage[Num_Vowel];
+    Im_Character= new PImage[Num_Vowel][Num_Consonant];
+    Array_Vowel=new int[Num_Vowel][Num_Consonant];
+    Array_Consonant=new int[Num_Vowel][Num_Consonant];
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      for(j=0;
+      j<Num_Consonant;
+
+      j++) {
+        Array_Vowel[i][j]=0;
+        Array_Consonant[i][j]=0;
+      }
+
+    }
+
+    //image input
+    for(i=0;
+    i<Num_Consonant;
+
+    i++) {
+      if(i<10)
+      Num="00";
+
+      else {
+        Num="0";
+      }
+
+      Num+=i;
+      route="Images/Consonant/consonant_"+Num+".gif";
+      Im_Consonant[i]= loadImage(route);
+    }
+
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      if(i<10)
+      Num="00";
+
+      else {
+        Num="0";
+      }
+
+      Num+=i;
+      route="Images/Vowel/vowel_"+Num+".gif";
+      Im_Vowel[i]= loadImage(route);
+    }
+
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      Num="";
+      Num+=i;
+      for(j=0;
+      j<Num_Consonant;
+
+      j++) {
+        Num2="";
+        Num2+=j;
+        route="Images/Character/character_"+Num+"_"+Num2+".gif";
+        Im_Character[i][j]=loadImage(route);
+      }
+
+    }
+
+    BackGround=loadImage("Images/background.png");
+    returnAll();
+    rectMode(CORNER);
+  }
+
+  void draw() {
+    background(255);
+    image(BackGround, 60, 60, 600, 840);
+    fill(250);
+    stroke(200);
+    rect(0, 0, BoxSize, BoxSize);
+    line(0, 0, BoxSize, BoxSize);
+    for(i=0;
+    i<Num_Consonant+1;
+
+    i++) {
+      stroke(200);
+      line(0, (i+1)*BoxSize, (Num_Vowel+1)*BoxSize, (i+1)*BoxSize);
+    }
+
+    for(i=0;
+    i<Num_Vowel+1;
+
+    i++) {
+      stroke(200);
+      line((i+1)*BoxSize, 0, (i+1)*BoxSize, (Num_Consonant+1)*BoxSize);
+    }
+
+    if(locked==true) {
+      for(i=0;
+      i<Num_Vowel;
+
+      i++) {
+        if (mouseX > X_Vowel[i] && mouseX < X_Vowel[i]+BoxSize &&  mouseY > Y_Vowel[i] && mouseY < Y_Vowel[i]+BoxSize) {
+          if(dragged==false) {
+            keynumber=VowelMatching+i;
+          }
+
+        }
+
+      }
+
+      for(j=0;
+      j<Num_Consonant;
+
+      j++) {
+        if (mouseX > X_Consonant[j] && mouseX < X_Consonant[j]+BoxSize &&  mouseY > Y_Consonant[j] && mouseY < Y_Consonant[j]+BoxSize) {
+          if(dragged==false) {
+            keynumber=ConsonantMatching+j;
+          }
+
+        }
+
+      }
+
+    }
+
+    DrawVC();
+    InputCheck();
+  }
+
+  void DrawVC() {
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      fill(247, 229, 101, 80);
+      rect(X_Vowel[i], Y_Vowel[i], BoxSize, BoxSize);
+      image(Im_Vowel[i], X_Vowel[i], Y_Vowel[i], BoxSize, BoxSize);
+    }
+
+    for(j=0;
+    j<Num_Consonant;
+
+    j++) {
+      fill(168, 53, 53, 80);
+      rect(X_Consonant[j], Y_Consonant[j], BoxSize, BoxSize);
+      image(Im_Consonant[j], X_Consonant[j], Y_Consonant[j], BoxSize, BoxSize);
+    }
+
+  }
+
+  void InputCheck() {
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      for(j=0;
+      j<Num_Consonant;
+
+      j++) {
+        if(Array_Vowel[i][j]==1 && Array_Consonant[i][j]==1) {
+          fill(0, 71, 133, 70);
+          rect((i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+          image(Im_Character[i][j], (i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+        }
+
+        else if(Array_Vowel[i][j]==1) {
+          fill(247, 229, 101, 70);
+          rect((i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+          image(Im_Vowel[i], (i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+        }
+
+        else if(Array_Consonant[i][j]==1) {
+          fill(168, 53, 53, 70);
+          rect((i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+          image(Im_Consonant[j], (i+1)*BoxSize, (j+1)*BoxSize, BoxSize, BoxSize);
+        }
+
+      }
+
+    }
+
+  }
+
+  void mousePressed() {
+    if (locked == false) {
+      if((mouseX > BoxSize && mouseX < (Num_Vowel+1)*BoxSize &&  mouseY > BoxSize && mouseY < (Num_Consonant+1)*BoxSize)) {
+        //Press the button, then play the sound
+        for(i=0;
+        i<Num_Vowel;
+
+        i++) {
+          for(j=0;
+          j<Num_Consonant;
+
+          j++) {
+            if ((mouseX > (i+1)*BoxSize && mouseX < (i+2)*BoxSize &&  mouseY > (j+1)*BoxSize && mouseY < (j+2)*BoxSize)&&(Array_Vowel[i][j]==1 && Array_Consonant[i][j]==1)) {
+              //////////////////////////PLAY SOUND///////////////////////////////
+              fileExt="Sounds/CharacterSound_"+i+"_"+j+".mp3";
+              audio.setAttribute("src", fileExt);
+              audio.play();
+              audio.volume=1;
+              ///////////////////////////////////////////////////////////////////
+            }
+
+          }
+
+        }
+
+      }
+
+      else
+      locked=true;
+    }
+
+  }
+
+  void mouseDragged() {
+    if(mouseX > BoxSize && mouseX < width &&  mouseY > BoxSize && mouseY < height) {
+      if(keynumber<ConsonantMatching && keynumber>=VowelMatching) {
+        Y_Vowel[keynumber-VowelMatching]=ceil(mouseY/BoxSize-1)*BoxSize;
+      }
+
+      else if(keynumber<ConsonantMatching+100 && keynumber >= ConsonantMatching) {
+        X_Consonant[keynumber-ConsonantMatching]=ceil(mouseX/BoxSize-1)*BoxSize;
+      }
+
+    }
+
+    else {
+      returnAll();
+    }
+
+  }
+
+  void mouseReleased() {
+    if(mouseX > BoxSize && mouseX < width &&  mouseY > BoxSize && mouseY < height) {
+      if(keynumber<ConsonantMatching && keynumber >= VowelMatching) {
+        TempX=(int)keynumber-VowelMatching;
+        TempY=(int)(Y_Vowel[keynumber-VowelMatching]/BoxSize-1);
+        Array_Vowel[TempX][TempY]=1;
+      }
+
+      else if(keynumber<ConsonantMatching+100 && keynumber >= ConsonantMatching) {
+        TempX=(int)(X_Consonant[keynumber-ConsonantMatching]/BoxSize-1);
+        TempY=(int)keynumber-ConsonantMatching;
+        Array_Consonant[TempX][TempY]=1;
+      }
+
+      //return key number;
+      keynumber=0;
+    }
+
+    else;
+    locked = false;
+    dragged= false;
+    returnAll();
+  }
+
+  void returnAll() {
+    for(i=0;
+    i<Num_Vowel;
+
+    i++) {
+      X_Vowel[i]=BoxSize*(i+1);
+      Y_Vowel[i]=0;
+    }
+
+    for(j=0;
+    j<Num_Consonant;
+
+    j++) {
+      X_Consonant[j]=0;
+      Y_Consonant[j]=BoxSize*(j+1);
+    }
+
+  }
+
+  void repeat() {
+    audio.play();
+  }
+
+  </script>
+</p>
+    <center>
+      <canvas id="pjs"></canvas>
+      <div><img src='./Images/favicon.png'width='45px'border='0'/> COPYRIGHT 2021 CODINGLINHTINH. ALL RIGHTS RESERVED.</div>
+    </center>
+
+  </br></br>
+</body>
+</html>
