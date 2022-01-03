@@ -1,3 +1,10 @@
+/*!
+ * Bootstrap v3.3.2 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -39,7 +46,7 @@ abbr[title] {
 }
 
 b, strong {
-    ont-weight: 700
+    font-weight: 700
 }
 
 dfn {
